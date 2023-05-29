@@ -13,9 +13,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
-          fontFamily: 'Helvetica'),
+          fontFamily: 'Georgia',
+          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple)
+              .copyWith(background: const Color(0xfffef9e9))),
       debugShowCheckedModeBanner: false,
       home: const HomePage(),
     );
