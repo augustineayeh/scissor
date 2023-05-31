@@ -36,23 +36,31 @@ class MyDrawer extends StatelessWidget {
     return Align(
       alignment: Alignment.topLeft,
       child: Container(
-        decoration: const BoxDecoration(
-            borderRadius: BorderRadius.only(bottomRight: Radius.circular(20)),
-            color: Color(0xffE2E9F0)),
-        height: 550,
+        decoration: const BoxDecoration(color: Color(0xffE2E9F0)),
+        height: 700,
         width: 370,
         child: SafeArea(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const SizedBox(
-                height: 50,
-              ),
-              const Padding(
-                padding: EdgeInsets.only(left: 30),
-                child: Text(
-                  'MENU',
-                  style: TextStyle(fontSize: 28),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 20),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    const Text(
+                      'MENU',
+                      style: TextStyle(fontSize: 28),
+                    ),
+                    IconButton(
+                        onPressed: () {
+                          Navigator.pop(context);
+                        },
+                        icon: const Icon(
+                          Icons.close,
+                          size: 35,
+                        ))
+                  ],
                 ),
               ),
               Align(
@@ -61,7 +69,7 @@ class MyDrawer extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     const SizedBox(
-                      height: 40,
+                      height: 20,
                     ),
                     navBarItem('My URLs', Colors.blue),
                     const SizedBox(
