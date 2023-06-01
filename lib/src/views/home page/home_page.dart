@@ -1,6 +1,80 @@
 import 'package:flutter/material.dart';
 import 'package:scissor/src/views/home%20page/drawer.dart';
 
+Widget createAnsweredFAQ(String question, String answer) {
+  return Column(
+    children: [
+      Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Text(
+            question,
+            style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+          ),
+          IconButton(
+              onPressed: () {},
+              icon: const Icon(
+                Icons.remove,
+                size: 20,
+              ))
+        ],
+      ),
+      Text(
+        answer,
+      ),
+      const SizedBox(
+        height: 10,
+      ),
+      const Divider()
+    ],
+  );
+}
+
+Widget footerCaption(String text) {
+  return Padding(
+    padding: const EdgeInsets.only(bottom: 2),
+    child: Text(
+      text,
+      style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+    ),
+  );
+}
+
+Widget footerText(String text) {
+  return SizedBox(
+    width: 180,
+    child: Text(
+      text,
+      style: const TextStyle(fontSize: 22),
+    ),
+  );
+}
+
+Widget createFAQ(String question) {
+  return Column(
+    children: [
+      Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          SizedBox(
+              width: 320,
+              child: Text(
+                question,
+                style: const TextStyle(fontWeight: FontWeight.bold),
+              )),
+          IconButton(
+              onPressed: () {},
+              icon: const Icon(
+                Icons.add,
+                size: 20,
+              ))
+        ],
+      ),
+      const Divider()
+    ],
+  );
+}
+
 Widget createOffer(String offerType, String price, String description,
     Color borderColor, Color containerColor, Color fontColor, Widget features) {
   return Container(
@@ -489,6 +563,154 @@ class HomePage extends StatelessWidget {
                       ],
                     ),
                   ),
+                ),
+                Container(
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 20, horizontal: 30),
+                  color: Colors.white,
+                  width: screenWidth,
+                  child: Column(children: [
+                    const Text(
+                      'FAQs',
+                      style:
+                          TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
+                    ),
+                    const SizedBox(
+                      height: 5,
+                    ),
+                    createAnsweredFAQ('How does URL shortening work?',
+                        'URL shortening works by taking a long URL and creating a shorter, condensed version that redirects to the original URL. When a user clicks on the shortened link, they are redirected to the intended destination.'),
+                    createFAQ(
+                        'Is it necessary to create an account to use the URL shortening service?'),
+                    createFAQ(
+                        'Are the shortened links permanent? Will they expire?'),
+                    createFAQ(
+                        'Are there any limitations on the number of URLs I can shorten?'),
+                    createFAQ(
+                        'Can I customize the shortened URLs to reflect my brand or content?'),
+                    createFAQ(
+                        'Can I track the performance of my shortened URLs?'),
+                    createFAQ(
+                        'How secure is the URL shortening service? Are the shortened links protected against spam or malicious activity?'),
+                    createFAQ('What is a QR code and what can it do?'),
+                    createFAQ(
+                        'Is there an API available for integrating the URL shortening service into my own applications or websites?'),
+                  ]),
+                ),
+                Container(
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+                  width: screenWidth,
+                  color: const Color(0xffe5f7fd),
+                  child: Column(children: [
+                    Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            footerCaption('Why Scissor ?'),
+                            footerText('Scissor 101'),
+                            footerText('Integrations'),
+                            footerText('Pricing')
+                          ],
+                        ),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            footerCaption('Solutions'),
+                            footerText('Social Media'),
+                            footerText('Digital Marketing'),
+                            footerText('Customer Service'),
+                            footerText('For Developers')
+                          ],
+                        )
+                      ],
+                    ),
+                    const SizedBox(
+                      height: 10,
+                    ),
+                    Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            footerCaption('Products'),
+                            footerText('Link Management'),
+                            footerText('QR Codes'),
+                            footerText('Link-in-bio'),
+                          ],
+                        ),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            footerCaption('Company'),
+                            footerText('About Scissor'),
+                            footerText('Careers'),
+                            footerText('Partners'),
+                            footerText('Press'),
+                            footerText('Contact'),
+                            footerText('Reviews')
+                          ],
+                        )
+                      ],
+                    ),
+                    const SizedBox(
+                      height: 10,
+                    ),
+                    Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            footerCaption('Resources'),
+                            footerText('Blog'),
+                            footerText('Resource Library'),
+                            footerText('Developers'),
+                            footerText('App Connectors'),
+                            footerText('Support'),
+                            footerText('Trust Center'),
+                            footerText('Browser'),
+                            footerText('Mobile app')
+                          ],
+                        ),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            footerCaption('Features'),
+                            footerText('Branded Links'),
+                            footerText('Mobile Links'),
+                            footerText('Campaign'),
+                            footerText('Management & analytics'),
+                            footerText('QR Code generation')
+                          ],
+                        )
+                      ],
+                    ),
+                    const SizedBox(
+                      height: 10,
+                    ),
+                    Row(
+                      children: [
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            footerCaption('Legal'),
+                            footerText('Privacy Policy'),
+                            footerText('Cookie Policy'),
+                            footerText('Terms of Service'),
+                            footerText('Acceptable Use Policy'),
+                            footerText('Code of conduct')
+                          ],
+                        ),
+                      ],
+                    ),
+                  ]),
                 )
               ],
             ),

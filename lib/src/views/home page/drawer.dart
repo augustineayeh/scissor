@@ -37,8 +37,8 @@ class MyDrawer extends StatelessWidget {
       alignment: Alignment.topLeft,
       child: Container(
         decoration: const BoxDecoration(color: Color(0xffE2E9F0)),
-        height: 700,
-        width: 370,
+        height: 800,
+        width: 400,
         child: SafeArea(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
