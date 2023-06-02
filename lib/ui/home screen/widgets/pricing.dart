@@ -1,12 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:scissor/ui/common/utils.dart';
-import 'package:scissor/ui/common/widgets.dart';
+import 'package:scissor/ui/widgets/widgets.dart';
 
-//  final String description;
-//   final Color borderColor;
-//   final Color containerColor;
-//   final Color fontColor;
-//   final Widget features;
 class Pricing extends StatelessWidget {
   const Pricing({super.key});
 
@@ -35,9 +29,7 @@ class Pricing extends StatelessWidget {
                 ),
                 TextSpan(
                   text: ' price perfect',
-                  style: TextStyle(
-                    color: Color(0xff015ee2),
-                  ),
+                  style: TextStyle(color: AppColors.deepBlue),
                 ),
                 TextSpan(
                   text: ' for your needs.',
@@ -63,7 +55,7 @@ class Pricing extends StatelessWidget {
             offerType: 'Basic',
             price: 'Free',
             description: 'Free plan for all users',
-            borderColor: deepBlue,
+            borderColor: AppColors.deepBlue,
             containerColor: Colors.white,
             fontColor: Colors.black,
             features: SizedBox(
@@ -94,8 +86,8 @@ class Pricing extends StatelessWidget {
             offerType: 'Professional',
             price: r'$15/month',
             description: 'Ideal for all business creators',
-            borderColor: Color(0xff1e3447),
-            containerColor: Color(0xff1e3447),
+            borderColor: AppColors.violet,
+            containerColor: AppColors.violet,
             fontColor: Colors.white,
             features: SizedBox(
               height: 200,
@@ -126,7 +118,7 @@ class Pricing extends StatelessWidget {
             offerType: 'Teams',
             price: r'$25/month',
             description: 'Share with up to 10 users',
-            borderColor: deepBlue,
+            borderColor: AppColors.deepBlue,
             containerColor: Colors.white,
             fontColor: Colors.black,
             features: SizedBox(

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:scissor/ui/common/utils.dart';
-import 'package:scissor/ui/common/widgets.dart';
+import 'package:scissor/ui/widgets/widgets.dart';
 
 class Header extends StatelessWidget {
   const Header({super.key});
@@ -30,9 +29,7 @@ class Header extends StatelessWidget {
                     ),
                     TextSpan(
                       text: ' URL Shortening',
-                      style: TextStyle(
-                        color: Color(0xff015ee2),
-                      ),
+                      style: TextStyle(color: AppColors.deepBlue),
                     ),
                     TextSpan(
                       text: ' Solution',
@@ -45,11 +42,8 @@ class Header extends StatelessWidget {
                   left: 100,
                   child: RotationTransition(
                     turns: const AlwaysStoppedAnimation(55 / 360),
-                    child: Image.asset(
-                      'assets/stroke.png',
-                      height: 80,
-                      color: const Color(0xff015ee2),
-                    ),
+                    child: Image.asset('assets/stroke.png',
+                        height: 80, color: AppColors.deepBlue),
                   ))
             ]),
           ),
@@ -64,11 +58,11 @@ class Header extends StatelessWidget {
           const SizedBox(
             height: 30,
           ),
-          Row(
+          const Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              const BlueButton(buttonText: 'Sign UP'),
-              blueText('Learn more')
+              BlueButton(buttonText: 'Sign UP'),
+              BlueText(text: 'Learn more')
             ],
           ),
           const SizedBox(

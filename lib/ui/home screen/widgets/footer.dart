@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:scissor/ui/common/utils.dart';
+import 'package:scissor/ui/widgets/widgets.dart';
 
 class Footer extends StatelessWidget {
   const Footer({super.key});
@@ -11,7 +11,7 @@ class Footer extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
       width: screenWidth,
       color: const Color(0xffe5f7fd),
-      child: Column(children: [
+      child: const Column(children: [
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -19,25 +19,25 @@ class Footer extends StatelessWidget {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const FooterCaption(text: 'Why Scissor ?'),
-                footerText('Scissor 101'),
-                footerText('Integrations'),
-                footerText('Pricing')
+                FooterCaption(caption: 'Why Scissor ?'),
+                FooterText(text: 'Scissor 101'),
+                FooterText(text: 'Integrations'),
+                FooterText(text: 'Pricing')
               ],
             ),
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const FooterCaption(text: 'Solutions'),
-                footerText('Social Media'),
-                footerText('Digital Marketing'),
-                footerText('Customer Service'),
-                footerText('For Developers')
+                FooterCaption(caption: 'Solutions'),
+                FooterText(text: 'Social Media'),
+                FooterText(text: 'Digital Marketing'),
+                FooterText(text: 'Customer Service'),
+                FooterText(text: 'For Developers')
               ],
             )
           ],
         ),
-        const SizedBox(
+        SizedBox(
           height: 10,
         ),
         Row(
@@ -47,32 +47,32 @@ class Footer extends StatelessWidget {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const FooterCaption(text: 'Resources'),
-                footerText('Blog'),
-                footerText('Resource Library'),
-                footerText('Developers'),
-                footerText('App Connectors'),
-                footerText('Support'),
-                footerText('Trust Center'),
-                footerText('Browser'),
-                footerText('Mobile app')
+                FooterCaption(caption: 'Resources'),
+                FooterText(text: 'Blog'),
+                FooterText(text: 'Resource Library'),
+                FooterText(text: 'Developers'),
+                FooterText(text: 'App Connectors'),
+                FooterText(text: 'Support'),
+                FooterText(text: 'Trust Center'),
+                FooterText(text: 'Browser'),
+                FooterText(text: 'Mobile app')
               ],
             ),
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const FooterCaption(text: 'Company'),
-                footerText('About Scissor'),
-                footerText('Careers'),
-                footerText('Partners'),
-                footerText('Press'),
-                footerText('Contact'),
-                footerText('Reviews')
+                FooterCaption(caption: 'Company'),
+                FooterText(text: 'About Scissor'),
+                FooterText(text: 'Careers'),
+                FooterText(text: 'Partners'),
+                FooterText(text: 'Press'),
+                FooterText(text: 'Contact'),
+                FooterText(text: 'Reviews')
               ],
             )
           ],
         ),
-        const SizedBox(
+        SizedBox(
           height: 10,
         ),
         Row(
@@ -82,28 +82,28 @@ class Footer extends StatelessWidget {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const FooterCaption(text: 'Legal'),
-                footerText('Privacy Policy'),
-                footerText('Cookie Policy'),
-                footerText('Terms of Service'),
-                footerText('Acceptable Use Policy'),
-                footerText('Code of conduct')
+                FooterCaption(caption: 'Legal'),
+                FooterText(text: 'Privacy Policy'),
+                FooterText(text: 'Cookie Policy'),
+                FooterText(text: 'Terms of Service'),
+                FooterText(text: 'Acceptable Use Policy'),
+                FooterText(text: 'Code of conduct')
               ],
             ),
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const FooterCaption(text: 'Features'),
-                footerText('Branded Links'),
-                footerText('Mobile Links'),
-                footerText('Campaign'),
-                footerText('Management & analytics'),
-                footerText('QR Code generation')
+                FooterCaption(caption: 'Features'),
+                FooterText(text: 'Branded Links'),
+                FooterText(text: 'Mobile Links'),
+                FooterText(text: 'Campaign'),
+                FooterText(text: 'Management & analytics'),
+                FooterText(text: 'QR Code generation')
               ],
             )
           ],
         ),
-        const SizedBox(
+        SizedBox(
           height: 10,
         ),
         Row(
@@ -111,10 +111,10 @@ class Footer extends StatelessWidget {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const FooterCaption(text: 'Products'),
-                footerText('Link Management'),
-                footerText('QR Codes'),
-                footerText('Link-in-bio'),
+                FooterCaption(caption: 'Products'),
+                FooterText(text: 'Link Management'),
+                FooterText(text: 'QR Codes'),
+                FooterText(text: 'Link-in-bio'),
               ],
             ),
           ],

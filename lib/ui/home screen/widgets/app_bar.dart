@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:scissor/ui/common/utils.dart';
-import 'package:scissor/ui/common/widgets.dart';
+import 'package:scissor/ui/widgets/widgets.dart';
 
 class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
@@ -11,16 +10,16 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext context) {
     return AppBar(
       backgroundColor: Colors.white,
-      actions: <Widget>[
+      actions: const <Widget>[
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
-            blueText('Log in'),
-            const SizedBox(
+            BlueText(text: 'Log in'),
+            SizedBox(
               width: 20,
             ),
-            const BlueButton(buttonText: 'Try for free'),
-            const SizedBox(
+            BlueButton(buttonText: 'Try for free'),
+            SizedBox(
               width: 20,
             )
           ],

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:scissor/ui/widgets/widgets.dart';
 
 class BlueButton extends StatefulWidget {
   final String buttonText;
@@ -17,7 +18,7 @@ class _BlueButtonState extends State<BlueButton> {
     return Container(
       padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 20),
       decoration: BoxDecoration(
-        color: const Color(0xff015ee2),
+        color: AppColors.deepBlue,
         borderRadius: BorderRadius.circular(20),
       ),
       child: Text(

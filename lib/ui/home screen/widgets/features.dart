@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:scissor/ui/common/utils.dart';
+import 'package:scissor/ui/widgets/widgets.dart';
 
 class Features extends StatelessWidget {
   const Features({super.key});
@@ -31,9 +31,7 @@ class Features extends StatelessWidget {
               decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(20),
-                  border: Border.all(
-                    color: const Color(0xff015ee2),
-                  )),
+                  border: Border.all(color: AppColors.deepBlue)),
               child: Column(
                 children: [
                   Row(mainAxisAlignment: MainAxisAlignment.center, children: [
@@ -54,7 +52,7 @@ class Features extends StatelessWidget {
                     ),
                     Image.asset(
                       'assets/right-arrow.png',
-                      color: const Color(0xff015ee2),
+                      color: AppColors.deepBlue,
                       height: 40,
                     ),
                     const SizedBox(
@@ -78,23 +76,31 @@ class Features extends StatelessWidget {
         const SizedBox(
           height: 25,
         ),
-        headingAndDescription('URL Shortening',
-            'Scissor allows you to shorten URLs of your business, events. Shorten your URL at scale, URL redirects.'),
+        const Feature(
+            heading: 'URL Shortening',
+            description:
+                'Scissor allows you to shorten URLs of your business, events. Shorten your URL at scale, URL redirects.'),
         const SizedBox(
           height: 25,
         ),
-        headingAndDescription('Custom URLs',
-            'Scissor allows you to shorten URLs of your business, events. Shorten your URL at scale, URL redirects.'),
+        const Feature(
+            heading: 'Custom URLs',
+            description:
+                'Scissor allows you to shorten URLs of your business, events. Shorten your URL at scale, URL redirects.'),
         const SizedBox(
           height: 25,
         ),
-        headingAndDescription('QR Codes',
-            'Generate QR codes to your business, events. Bring your audience and customers to your doorstep with this scan and go solution.'),
+        const Feature(
+            heading: 'QR Codes',
+            description:
+                'Generate QR codes to your business, events. Bring your audience and customers to your doorstep with this scan and go solution.'),
         const SizedBox(
           height: 25,
         ),
-        headingAndDescription('Data Analytics',
-            'Receive data on the usage of either your shortened URL, custom URLs or generated QR codes. Embedded to monitor progress.'),
+        const Feature(
+            heading: 'Data Analytics',
+            description:
+                'Receive data on the usage of either your shortened URL, custom URLs or generated QR codes. Embedded to monitor progress.'),
         const SizedBox(
           height: 20,
         ),

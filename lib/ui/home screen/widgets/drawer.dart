@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:scissor/ui/common/utils.dart';
+import 'package:scissor/ui/widgets/widgets.dart';
 
 class MyDrawer extends StatelessWidget {
   const MyDrawer({super.key});
@@ -30,35 +30,35 @@ class MyDrawer extends StatelessWidget {
                       )),
                 ),
               ),
-              Align(
+              const Align(
                 alignment: Alignment.topLeft,
                 child: Padding(
-                  padding: const EdgeInsets.only(left: 50.0),
+                  padding: EdgeInsets.only(left: 50.0),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
-                      const SizedBox(
+                      SizedBox(
                         height: 20,
                       ),
-                      navBarItem('My URLs', Colors.blue),
-                      const SizedBox(
+                      NavBarItem(text: 'My URLs', color: Colors.blue),
+                      SizedBox(
                         height: 10,
                       ),
-                      navBarItem('Features', Colors.black),
-                      const SizedBox(
+                      NavBarItem(text: 'Features', color: Colors.black),
+                      SizedBox(
                         height: 10,
                       ),
-                      navBarItem('Pricing', Colors.black),
-                      const SizedBox(
+                      NavBarItem(text: 'Pricing', color: Colors.black),
+                      SizedBox(
                         height: 10,
                       ),
-                      navBarItem('Analytics', Colors.black),
-                      const SizedBox(
+                      NavBarItem(text: 'Analytics', color: Colors.black),
+                      SizedBox(
                         height: 10,
                       ),
-                      navBarItem('FAQs', Colors.black),
-                      const SizedBox(
+                      NavBarItem(text: 'FAQs', color: Colors.black),
+                      SizedBox(
                         height: 0,
                       ),
                     ],

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:scissor/ui/common/utils.dart';
-import 'package:scissor/ui/common/widgets.dart';
+import 'package:scissor/ui/widgets/widgets.dart';
 
 class TrimURL extends StatelessWidget {
   const TrimURL({super.key});
@@ -12,7 +11,7 @@ class TrimURL extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 60),
       width: screenWidth,
       decoration: const BoxDecoration(
-        color: Color(0xff1e3447),
+        color: AppColors.violet,
       ),
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 40),
@@ -23,14 +22,14 @@ class TrimURL extends StatelessWidget {
             TextField(
               decoration: InputDecoration(
                 hintText: 'Paste URL here...',
-                hintStyle: const TextStyle(color: deepBlue),
+                hintStyle: const TextStyle(color: AppColors.deepBlue),
                 focusedBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(10),
-                  borderSide: const BorderSide(color: deepBlue),
+                  borderSide: const BorderSide(color: AppColors.deepBlue),
                 ),
                 enabledBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(10),
-                  borderSide: const BorderSide(color: deepBlue),
+                  borderSide: const BorderSide(color: AppColors.deepBlue),
                 ),
               ),
             ),
@@ -40,14 +39,14 @@ class TrimURL extends StatelessWidget {
             TextField(
               decoration: InputDecoration(
                 hintText: 'Customize domain',
-                hintStyle: const TextStyle(color: deepBlue),
+                hintStyle: const TextStyle(color: AppColors.deepBlue),
                 focusedBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(10),
-                  borderSide: const BorderSide(color: deepBlue),
+                  borderSide: const BorderSide(color: AppColors.deepBlue),
                 ),
                 enabledBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(10),
-                  borderSide: const BorderSide(color: deepBlue),
+                  borderSide: const BorderSide(color: AppColors.deepBlue),
                 ),
               ),
             ),
@@ -57,14 +56,14 @@ class TrimURL extends StatelessWidget {
             TextField(
               decoration: InputDecoration(
                 hintText: 'Type Alias here',
-                hintStyle: const TextStyle(color: deepBlue),
+                hintStyle: const TextStyle(color: AppColors.deepBlue),
                 focusedBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(10),
-                  borderSide: const BorderSide(color: deepBlue),
+                  borderSide: const BorderSide(color: AppColors.deepBlue),
                 ),
                 enabledBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(10),
-                  borderSide: const BorderSide(color: deepBlue),
+                  borderSide: const BorderSide(color: AppColors.deepBlue),
                 ),
               ),
             ),
@@ -79,7 +78,9 @@ class TrimURL extends StatelessWidget {
               textAlign: TextAlign.center,
               'By clicking TrimURL, I agree to the Terms of Service, Privacy Policy and Use of Cookies.',
               style: TextStyle(
-                  color: deepBlue, fontSize: 16, fontWeight: FontWeight.bold),
+                  color: AppColors.deepBlue,
+                  fontSize: 16,
+                  fontWeight: FontWeight.bold),
             )
           ],
         ),
