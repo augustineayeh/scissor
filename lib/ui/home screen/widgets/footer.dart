@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:scissor/utils.dart';
+import 'package:scissor/ui/common/utils.dart';
 
 class Footer extends StatelessWidget {
   const Footer({super.key});

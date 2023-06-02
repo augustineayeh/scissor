@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:scissor/utils.dart';
+import 'package:scissor/ui/common/utils.dart';
+import 'package:scissor/ui/common/widgets.dart';
 
 class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
@@ -18,7 +19,7 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
             const SizedBox(
               width: 20,
             ),
-            blueButton('Try for free'),
+            const BlueButton(buttonText: 'Try for free'),
             const SizedBox(
               width: 20,
             )

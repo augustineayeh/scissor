@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:scissor/utils.dart';
+import 'package:scissor/ui/common/utils.dart';
+import 'package:scissor/ui/common/widgets.dart';
 
 class Header extends StatelessWidget {
   const Header({super.key});
@@ -65,7 +66,10 @@ class Header extends StatelessWidget {
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [blueButton('Sign Up'), blueText('Learn more')],
+            children: [
+              const BlueButton(buttonText: 'Sign UP'),
+              blueText('Learn more')
+            ],
           ),
           const SizedBox(
             height: 20,

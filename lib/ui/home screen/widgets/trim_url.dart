@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:scissor/utils.dart';
+import 'package:scissor/ui/common/utils.dart';
+import 'package:scissor/ui/common/widgets.dart';
 
 class TrimURL extends StatelessWidget {
   const TrimURL({super.key});
@@ -70,7 +71,7 @@ class TrimURL extends StatelessWidget {
             const SizedBox(
               height: 20,
             ),
-            blueButton('Trim URL '),
+            const BlueButton(buttonText: 'Trim URL '),
             const SizedBox(
               height: 20,
             ),

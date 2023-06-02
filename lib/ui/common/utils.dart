@@ -1,3 +1,4 @@
+// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
 
 Widget createAnsweredFAQ(String question, String answer) {
@@ -129,20 +130,6 @@ Widget offerFeature(String feature, Color fontColor) {
 }
 
 const Color deepBlue = Color(0xff015ee2);
-
-Widget blueButton(String text) {
-  return Container(
-    padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 20),
-    decoration: BoxDecoration(
-      color: const Color(0xff015ee2),
-      borderRadius: BorderRadius.circular(20),
-    ),
-    child: Text(
-      text,
-      style: const TextStyle(color: Colors.white, fontSize: 17),
-    ),
-  );
-}
 
 Widget blueText(String text) {
   return Text(

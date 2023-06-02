@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:scissor/utils.dart';
+import 'package:scissor/ui/common/utils.dart';
 
 class FAQ extends StatelessWidget {
   const FAQ({super.key});

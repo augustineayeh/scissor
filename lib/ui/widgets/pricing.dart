@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:scissor/utils.dart';
+import 'package:scissor/ui/common/utils.dart';
+import 'package:scissor/ui/common/widgets.dart';
 
 class Pricing extends StatelessWidget {
   const Pricing({super.key});
@@ -124,7 +125,7 @@ class Pricing extends StatelessWidget {
           const SizedBox(
             height: 30,
           ),
-          blueButton('Select Pricing'),
+          const BlueButton(buttonText: 'Select Pricing'),
           const SizedBox(
             height: 30,
           ),
