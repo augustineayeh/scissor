@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:scissor/views/home_page.dart';
+import 'package:scissor/ui/home%20screen/home_page.dart';
 
 void main() {
   runApp(const MyApp());
