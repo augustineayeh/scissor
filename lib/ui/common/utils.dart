@@ -1,35 +1,6 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
 
-Widget createAnsweredFAQ(String question, String answer) {
-  return Column(
-    children: [
-      Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          Text(
-            question,
-            style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
-          ),
-          IconButton(
-              onPressed: () {},
-              icon: const Icon(
-                Icons.remove,
-                size: 20,
-              ))
-        ],
-      ),
-      Text(
-        answer,
-      ),
-      const SizedBox(
-        height: 10,
-      ),
-      const Divider()
-    ],
-  );
-}
-
 Widget navBarItem(String text, Color color) {
   return Text(
     text,
@@ -53,79 +24,6 @@ Widget footerText(String text) {
     child: Text(
       text,
     ),
-  );
-}
-
-Widget createFAQ(String question) {
-  return Column(
-    children: [
-      Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          SizedBox(
-              width: 320,
-              child: Text(
-                question,
-                style: const TextStyle(fontWeight: FontWeight.bold),
-              )),
-          IconButton(
-              onPressed: () {},
-              icon: const Icon(
-                Icons.add,
-                size: 20,
-              ))
-        ],
-      ),
-      const Divider()
-    ],
-  );
-}
-
-Widget createOffer(String offerType, String price, String description,
-    Color borderColor, Color containerColor, Color fontColor, Widget features) {
-  return Container(
-    width: 365,
-    padding: const EdgeInsets.symmetric(vertical: 50, horizontal: 30),
-    decoration: BoxDecoration(
-        border: Border.all(
-          color: borderColor,
-        ),
-        color: containerColor,
-        borderRadius: BorderRadius.circular(10)),
-    child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-      Text(
-        offerType,
-        style: TextStyle(color: fontColor, fontSize: 22),
-      ),
-      const SizedBox(
-        height: 5,
-      ),
-      Text(
-        price,
-        style: TextStyle(
-            color: fontColor, fontWeight: FontWeight.bold, fontSize: 25),
-      ),
-      Text(
-        description,
-        style: TextStyle(color: fontColor, fontSize: 22),
-      ),
-      const SizedBox(
-        height: 5,
-      ),
-      features
-    ]),
-  );
-}
-
-Widget offerFeature(String feature, Color fontColor) {
-  return Row(
-    children: [
-      Image.asset('assets/check.png', height: 20, color: fontColor),
-      const SizedBox(
-        width: 10,
-      ),
-      Text(feature, style: TextStyle(color: fontColor, fontSize: 20))
-    ],
   );
 }
 

@@ -19,7 +19,7 @@ class Footer extends StatelessWidget {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                footerCaption('Why Scissor ?'),
+                const FooterCaption(text: 'Why Scissor ?'),
                 footerText('Scissor 101'),
                 footerText('Integrations'),
                 footerText('Pricing')
@@ -28,7 +28,7 @@ class Footer extends StatelessWidget {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                footerCaption('Solutions'),
+                const FooterCaption(text: 'Solutions'),
                 footerText('Social Media'),
                 footerText('Digital Marketing'),
                 footerText('Customer Service'),
@@ -47,7 +47,7 @@ class Footer extends StatelessWidget {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                footerCaption('Resources'),
+                const FooterCaption(text: 'Resources'),
                 footerText('Blog'),
                 footerText('Resource Library'),
                 footerText('Developers'),
@@ -61,7 +61,7 @@ class Footer extends StatelessWidget {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                footerCaption('Company'),
+                const FooterCaption(text: 'Company'),
                 footerText('About Scissor'),
                 footerText('Careers'),
                 footerText('Partners'),
@@ -82,7 +82,7 @@ class Footer extends StatelessWidget {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                footerCaption('Legal'),
+                const FooterCaption(text: 'Legal'),
                 footerText('Privacy Policy'),
                 footerText('Cookie Policy'),
                 footerText('Terms of Service'),
@@ -93,7 +93,7 @@ class Footer extends StatelessWidget {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                footerCaption('Features'),
+                const FooterCaption(text: 'Features'),
                 footerText('Branded Links'),
                 footerText('Mobile Links'),
                 footerText('Campaign'),
@@ -111,7 +111,7 @@ class Footer extends StatelessWidget {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                footerCaption('Products'),
+                const FooterCaption(text: 'Products'),
                 footerText('Link Management'),
                 footerText('QR Codes'),
                 footerText('Link-in-bio'),

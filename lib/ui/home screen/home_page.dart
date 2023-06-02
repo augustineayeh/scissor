@@ -17,7 +17,7 @@ class HomePage extends StatelessWidget {
                 Features(),
                 Pricing(),
                 TrimURL(),
-                FAQ(),
+                FAQSection(),
                 Footer()
               ],
             ),
