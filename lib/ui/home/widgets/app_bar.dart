@@ -14,7 +14,7 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
-            BlueText(text: 'Log in'),
+            BlueTextButton(text: 'Log in'),
             SizedBox(
               width: 20,
             ),

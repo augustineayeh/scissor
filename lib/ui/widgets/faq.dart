@@ -2,10 +2,12 @@ import 'package:flutter/material.dart';
 
 class FAQ extends StatefulWidget {
   final String question;
+  final String? answer;
 
   const FAQ({
     Key? key,
     required this.question,
+    this.answer,
   }) : super(key: key);
 
   @override
@@ -34,6 +36,7 @@ class _FAQState extends State<FAQ> {
                 ))
           ],
         ),
+        if (widget.answer != null) Text(widget.answer!),
         const Divider()
       ],
     );

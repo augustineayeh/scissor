@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 
 class OfferFeature extends StatefulWidget {
   final String feature;
-  final Color fontColor;
+  final Color? fontColor;
   const OfferFeature({
     Key? key,
     required this.feature,
-    required this.fontColor,
+    this.fontColor,
   }) : super(key: key);
 
   @override
@@ -23,7 +23,8 @@ class _OfferFeatureState extends State<OfferFeature> {
           width: 10,
         ),
         Text(widget.feature,
-            style: TextStyle(color: widget.fontColor, fontSize: 20))
+            style: TextStyle(
+                color: widget.fontColor ?? Colors.black, fontSize: 20))
       ],
     );
   }

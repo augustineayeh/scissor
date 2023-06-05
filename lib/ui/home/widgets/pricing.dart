@@ -63,19 +63,11 @@ class Pricing extends StatelessWidget {
               child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    OfferFeature(
-                        feature: 'Unlimited URL Shortening',
-                        fontColor: Colors.black),
-                    OfferFeature(
-                        feature: 'Basic Link Analytics',
-                        fontColor: Colors.black),
-                    OfferFeature(
-                        feature: 'Customizable Short Links',
-                        fontColor: Colors.black),
-                    OfferFeature(
-                        feature: 'Standard Support', fontColor: Colors.black),
-                    OfferFeature(
-                        feature: 'Ad-supported', fontColor: Colors.black)
+                    OfferFeature(feature: 'Unlimited URL Shortening'),
+                    OfferFeature(feature: 'Basic Link Analytics'),
+                    OfferFeature(feature: 'Customizable Short Links'),
+                    OfferFeature(feature: 'Standard Support'),
+                    OfferFeature(feature: 'Ad-supported')
                   ]),
             ),
           ),
@@ -126,17 +118,11 @@ class Pricing extends StatelessWidget {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  OfferFeature(
-                      feature: 'Team Collaboration', fontColor: Colors.black),
-                  OfferFeature(
-                      feature: 'User Roles and Permission',
-                      fontColor: Colors.black),
-                  OfferFeature(
-                      feature: 'Enhanced Security', fontColor: Colors.black),
-                  OfferFeature(feature: 'API Access', fontColor: Colors.black),
-                  OfferFeature(
-                      feature: 'Dedicated Account Manager',
-                      fontColor: Colors.black),
+                  OfferFeature(feature: 'Team Collaboration'),
+                  OfferFeature(feature: 'User Roles and Permission'),
+                  OfferFeature(feature: 'Enhanced Security'),
+                  OfferFeature(feature: 'API Access'),
+                  OfferFeature(feature: 'Dedicated Account Manager'),
                 ],
               ),
             ),

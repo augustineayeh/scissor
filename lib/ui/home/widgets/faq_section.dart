@@ -1,6 +1,6 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
-import 'package:scissor/ui/common/widgets.dart';
+import 'package:scissor/ui/widgets/widgets.dart';
 
 class FAQSection extends StatelessWidget {
   const FAQSection({
@@ -22,7 +22,7 @@ class FAQSection extends StatelessWidget {
         SizedBox(
           height: 5,
         ),
-        FirstFAQ(
+        FAQ(
             question: 'How does URL shortening work?',
             answer:
                 'URL shortening works by taking a long URL and creating a shorter, condensed version that redirects to the original URL. When a user clicks on the shortened link, they are redirected to the intended destination.'),

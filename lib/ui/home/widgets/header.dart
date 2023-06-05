@@ -62,7 +62,7 @@ class Header extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               BlueButton(buttonText: 'Sign UP'),
-              BlueText(text: 'Learn more')
+              BlueTextButton(text: 'Learn more')
             ],
           ),
           const SizedBox(
